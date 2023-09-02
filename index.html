@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/ring.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>LOTR</title>
+  </head>
+  <body>
+    <header>
+      <h3>The Lord of the Rings App</h3>        
+      <button id="btn-create-character">Create character</button>
+      <form id="searchbyname">
+        <input type="search" id="input-search" placeholder="Search by name">
+      </form>
+    </header>
+  <main>
+    <div class="tools-grid">
+        <label for="sortby">Sort by:        
+          <form id="sortby" name="sortby">
+            <select name="sortbyselect" id="sortbyselect">
+              <option value="name">Name</option>
+              <option value="title">Title</option>
+            </select>
+          </form>
+        </label>
+
+        <label for="filterby">Filter by:
+           <form id="filterby" name="filterby">
+            <select>
+              <option value="filterall">All</option>
+              <option value="ainur">Ainur</option>
+              <option value="dwarf">Dwarves</option>
+              <option value="elf">Elves</option>
+              <option value="hobbit">Hobbits</option>
+              <option value="men">Men</option>
+              <option value="orc">Orcs</option>
+            </select>
+          </form>
+        </label>
+
+      </div>
+
+        <h2>Characters</h2>
+        <section id="characters" class="grid-container"></section>
+</main>
+
+<dialog id="character-modal">
+  <img id="character-image" src="">
+  <h3 id="character-name"></h3>
+  <p>Birth: <span id="character-birth"></span></p>
+  <p>Culture: <span id="character-culture"></span></p>
+  <p>Death: <span id="character-death"></span></p>
+  <p>Gender: <span id="character-gender"></span></p>
+  <p>Race: <span id="character-race"></span></p>
+  <p>Realm: <span id="character-realm"></span></p>
+  <p>Title: <span id="character-title"></span></p>
+  <p>Weapon: <span id="character-weapon"></span></p>
+  <form method="dialog">
+    <button>Close</button>
+  </form>
+</dialog>
+
+  <dialog id="dialog-create-character">
+    <div class="create-dialog-container">
+      <h2 class="create-dialog-head">Create new character</h2>
+      <form id="form-create-character" method="dialog" class="create-dialog-form">
+        <label for="name">Name
+          <input type="text" name="name" id="characterName" placeholder="Input Character's name" size="50" required/>
+        </label>
+
+        <label for="image">Image <input type="url" name="image" id="image"placeholder="Input Character's image" size="50" required/>
+        </label>
+
+        <label for="birth">Year of Birth <input type="text" name="birth" id="birth" placeholder="Input Character's year of birth" size="50"/>
+        </label>
+
+        <label for="culture">Culture <input type="text" name="culture" id="culture" placeholder="Input Character's culture" size="50"/>
+        </label>
+
+        <label for="death">Date of Death <input type="text" name="death" id="death" placeholder="Input Character's year of death" size="50"/>
+        </label>
+
+        <label for="race">Race</label>
+        <select name="race"id="race">
+          <option value="elf">Elf</option>
+          <option value="men">Human</option>
+          <option value="orc">Orcs</option>
+          <option value="dwarf">Dwarves</option>
+          <option value="hobbit">Hobbit</option>
+        </select>
+
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select><br>
+
+
+        <label for="realm">Realm <input type="text" name="realm" id="realm" placeholder="Input Character's Realm of residence" size="50"/>
+        </label>
+
+        <label for="title">Title <input type="text" name="title" id="title" placeholder="Input Character's title" size="50"/>
+        </label>
+
+        <label for="weapon">Weapon <input type="text" name="weapon" id="weapon" placeholder="Input Character's weapon" size="50"/>
+        </label>
+
+        <button class="btn-cancel">Close</button>
+        <p class="error-message hide">Error Message Placeholder</p>
+        <button>Create Character</button>
+      </form>
+  </div>
+</dialog>
+
+                <!-- dialog - delete post -->
+  <dialog id="dialog-delete-character">
+        <h2>Do you want to delete a character?</h2>
+        <p id="dialog-delete-character-title">Name of the Character</p>
+        <form method="dialog" id="form-delete-character">
+        <button type="button" class="btn-cancel" id="cancelDelete">No</button>
+        <button>Yes</button>
+        </form>
+    </dialog>
+
+  <dialog id="dialog-delete-feedback">
+    <p id="dialog-delete-feedback-message">Character is deleted</p>
+  </dialog>
+
+  <dialog id="dialog-update-character">
+      <h2>Update Character</h2>
+      <form id="form-update-character" method="dialog">
+        <label for="name">Name</label>
+        <input type="text" name="name" />
+
+        <label for="image">Image</label>
+        <input type="url" name="image" />
+
+        <label for="birth">Birth Year</label>
+        <input type="text" name="birth" />
+
+        <label for="culture">Culture</label>
+        <input type="text" name="culture" />
+
+        <label for="death">Death</label>
+        <input type="text" name="death" />
+
+        <label for="race">Race</label>
+        <select name="race">
+          <option value="elf">Elf</option>
+          <option value="men">Human</option>
+          <option value="orc">Orcs</option>
+          <option value="dwarf">Dwarves</option>
+          <option value="hobbit">Hobbit</option>
+        </select>
+
+        <label for="gender">Gender</label>
+        <select name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select><br>
+
+        <label for="realm">Realm</label>
+        <input type="text" name="realm" />
+
+        <label for="title">Title</label>
+        <input type="text" name="title" />
+
+        <label for="weapon">Weapon</label>
+        <input type="text" name="weapon" />
+
+        <button class="btn-cancel">Close</button>
+        <button>Update</button>
+      </form>
+    </dialog>
+
+    <dialog id="dialog-failed-to-update">
+      <p>Character Update Failed</p>
+      <button class="btn-cancel">Close</button>
+    </dialog>
+
+    <script src="js/script.js"type="module"></script>
+  </body>
+</html>
