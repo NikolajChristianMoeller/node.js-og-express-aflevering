@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "artistName": "Madonna Louise Ciccone",
+    "name": "Madonna",
+    "birthdate": "1958-8-16",
+    "activeSince": 1979,
+    "genres": ["Pop", "Electronics", "Dance"],
+    "labels": ["Sire", "Warner", "Maverick", "Interscope"],
+    "website": "https://madonna.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Madonna_Rebel_Heart_Tour_2015_-_Stockholm_%2823051472299%29_%28cropped%29.jpg/220px-Madonna_Rebel_Heart_Tour_2015_-_Stockholm_%2823051472299%29_%28cropped%29.jpg",
+    "shortDescription": "Madonna Louise Ciccone was born August 16, 1958) is an American singer, songwriter, and actress."
+  },
+  {
+    "id": 1,
+    "artistName": "Snoop Dogg",
+    "name": "Calvin Cordozar Broadus Jr.",
+    "birthdate": "1971-20-20",
+    "activeSince": 1992,
+    "genres": ["Hip-hop", "West Coast hip hop", "G-funk", "Gangsta Rap"],
+    "labels": ["Death Row", "Create", "Doggystyle", "EMPIRE", "Def Jam", "RCA Inspiration", "E1", "i am OTHER", "Columbia", "RCA", "MCA", "Priority", "Geffen", "Capitol", "EMI", "Star Trek", "No Limit", "Interscope"],
+    "website": "https://snoopdogg.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Snoop_Dogg_2019_by_Glenn_Francis.jpg/220px-Snoop_Dogg_2019_by_Glenn_Francis.jpg",
+    "shortDescription": "Calvin Cordozar Broadus Jr. known professionally as Snoop Dogg (previously Snoop Doggy Dogg and briefly Snoop Lion), is an American rapper and actor. "
+  },
+  {
+    "id": 2,
+    "artistName": "Eminem",
+    "name": "Marshall Bruce Mathers III",
+    "birthdate": "1972-10-17",
+    "activeSince": 1988,
+    "genres": ["Hip-hop"],
+    "labels": ["Shady", "Aftermath", "Interscope", "Web"],
+    "website": "www.eminem.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Eminem_-_Concert_for_Valor_in_Washington%2C_D.C._Nov._11%2C_2014_%282%29_%28Cropped%29.jpg/220px-Eminem_-_Concert_for_Valor_in_Washington%2C_D.C._Nov._11%2C_2014_%282%29_%28Cropped%29.jpg",
+    "shortDescription": "Marshall Bruce Mathers III (born October 17, 1972), known professionally as Eminem, often stylized as EMINƎM, is an American rapper, songwriter, and record producer."
+  },
+  {
+    "id": 3,
+    "artistName": "50 Cent",
+    "name": "Curtis James Jackson III",
+    "birthdate": "1975-7-6",
+    "activeSince": 1996,
+    "genres": ["Hip-hop"],
+    "labels": ["Caroline", "Capitol", "G-Unit", "Shady", "Aftermath", "Interscope", "Universal", "Columbia", "Trackmasters", "JMJ"],
+    "website": "https://www.50cent.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/50_Cent_in_2018.png/220px-50_Cent_in_2018.png",
+    "shortDescription": "Curtis James Jackson III (born July 6, 1975),[2] known professionally as 50 Cent, is an American rapper, actor, television producer, and businessman. Born in the South Jamaica neighborhood of Queens"
+  }
+]
